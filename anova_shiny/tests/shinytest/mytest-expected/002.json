@@ -1,0 +1,105 @@
+{
+  "input": {
+    "anova-anova_input_file": {
+      "name": [
+        "report.xlsx"
+      ],
+      "size": [
+        57255
+      ],
+      "type": [
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ],
+      "datapath": [
+        "0.xlsx"
+      ]
+    },
+    "anova-anova_input_group": {
+      "name": [
+        "group.xlsx"
+      ],
+      "size": [
+        10772
+      ],
+      "type": [
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ],
+      "datapath": [
+        "0.xlsx"
+      ]
+    },
+    "anova-category": "gender"
+  },
+  "output": {
+    "anova-anova_tab": "<table  class = 'table shiny-table table-striped table-hover table-bordered spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'>  <\/th> <th style='text-align: right;'> Df <\/th> <th style='text-align: right;'> Sum Sq <\/th> <th style='text-align: right;'> Mean Sq <\/th> <th style='text-align: right;'> F value <\/th> <th style='text-align: right;'> Pr(&gt;F) <\/th>  <\/tr> <\/thead> <tbody>\n  <tr> <td> Group <\/td> <td align=\"right\">     1 <\/td> <td align=\"right\"> 21.8821 <\/td> <td align=\"right\"> 21.8821 <\/td> <td align=\"right\"> 19.4330 <\/td> <td align=\"right\"> 0.0000 <\/td> <\/tr>\n  <tr> <td> Residuals <\/td> <td align=\"right\">   125 <\/td> <td align=\"right\"> 140.7534 <\/td> <td align=\"right\"> 1.1260 <\/td> <td align=\"right\" class='NA'> NA <\/td> <td align=\"right\" class='NA'> NA <\/td> <\/tr>\n   <\/tbody> <\/table>",
+    "anova-bar_plot": {
+      "src": "[image data sha1: d148eb26c5d681cc89dd40b2d8871099d56e8019]",
+      "width": 757,
+      "height": 400,
+      "coordmap": {
+        "panels": [
+          {
+            "panel": 1,
+            "row": 1,
+            "col": 1,
+            "panel_vars": {
+
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "domain": {
+              "left": 0.4,
+              "right": 2.6,
+              "bottom": -2.54801402259352,
+              "top": 3.0406188706708,
+              "discrete_limits": {
+                "x": [
+                  "female",
+                  "male"
+                ]
+              }
+            },
+            "mapping": {
+              "x": "Group",
+              "y": "ability_theta"
+            },
+            "range": {
+              "left": 32.1506806843886,
+              "right": 751.520448669043,
+              "bottom": 365.849223606164,
+              "top": 5.47945068493151
+            }
+          }
+        ],
+        "dims": {
+          "width": 757,
+          "height": 400
+        }
+      }
+    },
+    "anova-select_group": {
+      "html": "<div class=\"form-group shiny-input-container\">\n  <label class=\"control-label\" for=\"anova-category\"><\/label>\n  <div>\n    <select id=\"anova-category\"><option value=\"school\" selected>school<\/option>\n<option value=\"gender\">gender<\/option><\/select>\n    <script type=\"application/json\" data-for=\"anova-category\" data-nonempty=\"\">{}<\/script>\n  <\/div>\n<\/div>",
+      "deps": [
+        {
+          "name": "selectize",
+          "version": "0.11.2",
+          "src": {
+            "href": "shared/selectize"
+          },
+          "meta": null,
+          "script": null,
+          "stylesheet": "css/selectize.bootstrap3.css",
+          "head": "<!--[if lt IE 9]>\n<script src=\"shared/selectize/js/es5-shim.min.js\"><\/script>\n<![endif]-->\n<script src=\"shared/selectize/js/selectize.min.js\"><\/script>",
+          "attachment": null,
+          "package": null,
+          "all_files": true
+        }
+      ]
+    }
+  },
+  "export": {
+
+  }
+}
